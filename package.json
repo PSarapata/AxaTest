@@ -1,0 +1,31 @@
+{
+  "name": "axatest",
+  "version": "1.0.0",
+  "description": "Automated Testing Coding Assignment",
+  "main": "test.js",
+  "dependencies": {
+    "core-js": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test:firefox": "testcafe firefox test.js",
+    "test:chrome": "testcafe chrome test.js",
+    "test:chrome:headless": "testcafe chrome:headless test.js",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iPhone X test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PSarapata/AxaTest.git"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Pawel Sarapata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PSarapata/AxaTest/issues"
+  },
+  "homepage": "https://github.com/PSarapata/AxaTest#readme"
+}
