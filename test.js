@@ -1,10 +1,10 @@
 import { Selector } from 'testcafe';
 
 // prettier-ignore
-// TestCafe hook to slow down each test, so that you can observer what's going on. Don't use it in production environment.
 fixture `Working...`
     .page `https://secure.axainsurance.com/Sales/PersonalLines/AxaDirect/Axa/Travel/Standard/Desktop/Quote/Entry`
     // UNCOMMENT LINES BELOW IF YOU FEEL DIZZY LOOKING AT THE TEST PREVIEWS:
+    // TestCafe hook to slow down each test, so that you can observe what's going on. Don't use it in production environment.
     // .beforeEach(async t => {
     //     await t.setTestSpeed(0.5);
     // })
@@ -79,7 +79,7 @@ test('Testing Axa Travel', async t => {
            .click(no_shorttime_prescribed_medications)
            .click(submit_first_page);
 
-    // test second first_page
+    // test second page
     await t
         .click(smartTravelOption)
         .click(noCruiseCover)
